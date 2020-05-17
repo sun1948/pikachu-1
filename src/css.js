@@ -33,7 +33,7 @@ const string = `.pikachu * {
   margin-top: 38px;
   box-shadow: 0 -1px 0 black;
 }
-.nose:before {
+.nose::before {
   content: "";
   display: block;
   width: 22px;
@@ -78,7 +78,7 @@ const string = `.pikachu * {
 .eye.left {
   transform: translateX(-119px);
 }
-.eye.left:before {
+.eye.left::before {
   content: "";
   display: block;
   width: 31px;
@@ -92,7 +92,7 @@ const string = `.pikachu * {
 .eye.right {
   transform: translateX(118px);
 }
-.eye.right:before {
+.eye.right::before {
   content: "";
   display: block;
   width: 31px;
@@ -112,8 +112,8 @@ const string = `.pikachu * {
   margin-left: -114px;
   overflow: hidden;
 }
-.mouth:before,
-.mouth:after{
+.mouth::before,
+.mouth::after{
   content: "";
   display: block;
   box-sizing: content-box;
@@ -123,7 +123,7 @@ const string = `.pikachu * {
   background: #ffe600;
   border-top: none;
 }
-.mouth:before {
+.mouth::before {
   border-right: none;
   border-bottom-left-radius: 60px 30px;
   transform: rotate(-25deg);
@@ -133,7 +133,7 @@ const string = `.pikachu * {
   z-index: 1;
   box-shadow: 0 -10px 0 #ffe600, 5px -3px 0 #ffe600;
 }
-.mouth:after {
+.mouth::after {
   border-left: none;
   border-bottom-right-radius: 60px 30px;
   transform: rotate(25deg);
@@ -155,7 +155,7 @@ const string = `.pikachu * {
   margin-top: -637px;
   overflow: hidden;
 }
-.mouth > div:after {
+.mouth > div::after {
   content: "";
   display: block;
   position: absolute;
