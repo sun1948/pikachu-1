@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta
+            content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,
+        user-scalable=no,viewport-fit=cover"
+            name="viewport"
+    />
+    <title>测试</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        #buttons {
+            position: fixed;
+            right: 20px;
+            top: 15px;
+            display: flex;
+            flex-direction: column;
+            z-index: 2;
+        }
+
+        #buttons button {
+            margin-bottom: 10px;
+        }
+
+        #code {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 50vh;
+            width: 100%;
+            overflow-y: auto;
+            border: 1px solid black;
+        }
+
+        #html {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            height: 50vh;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+<div id="code"></div>
+<style id="css"></style>
+<div id="buttons">
+    <button id="btnPause">暂停</button>
+    <button id="btnPlay">播放</button>
+    <button id="btnFast">快速</button>
+    <button id="btnNormal">正常</button>
+    <button id="btnSlow">慢速</button>
+</div>
+<div id="html">
+    <div class="pikachuWrapper">
+        <div class="pikachu">
+            <div class="eye left"></div>
+            <div class="eye right"></div>
+            <div class="nose"></div>
+            <div class="mouth">
+                <div></div>
+            </div>
+            <div class="face left"></div>
+            <div class="face right"></div>
+        </div>
+    </div>
+</div>
+<script src="test.js"></script>
+</body>
+</html>
